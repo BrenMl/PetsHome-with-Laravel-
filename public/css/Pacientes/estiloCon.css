@@ -1,0 +1,45 @@
+body,html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+    background-image: url("bonito.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.cubierta{
+  /*display: inline-block;*/
+  width: 80%;
+  height: 180%;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  margin-left: 9%;
+
+}
+th{
+  text-align: center;
+}
+a{
+  align: center;
+}
+h2{
+  color:#cccccc;
+  text-align: center;
+}
+h1{
+  color: #999966;
+  text-align: center;
+}
+table{
+  /*background-color: #404040;*/
+  /*opacity: 0.5;*/
+  color:#cccccc;
+  font: 20px monospace;
+    width: 100%;
+    height: 100%;
+    /*margin-left: 1%;*/
+    background: rgba(0,0,0,0.5);
+}

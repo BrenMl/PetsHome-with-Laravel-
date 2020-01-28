@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+   padding-top: 70px;
+    
+}
+
+
+
+.menu_bar{
+    display: none;
+}
+
+header #nav1{
+    display: none;
+}
+
+header nav{
+/*    display: none;*/
+}
+
+
+header nav{
+    width: 100%;
+    background: darkslategrey;
+    z-index: 1000;
+    
+    width: 100%;
+/*    margin: 20px auto;*/
+    position: fixed;
+    
+    top:0;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li:hover{
+    background: black;
+}
+
+header nav ul li a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
+
+header nav ul li .children{
+    display: none;
+    position: absolute;
+    background: darkslategrey;
+    width: 150%;
+    z-index: 1000px;
+}
+
+header nav ul li:hover .children{
+/*    display: block;*/
+    
+}
+
+header nav ul li .children li{
+/*    display: block;*/
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a{
+  display: block;
+}
+
+header nav ul li .children li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin right: 0;
+    margin-left: 10px;
+}
+
+header nav ul li .caret{
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+
+
+header nav ul #config{
+    float: right;
+  
+    
+    
+    
+/*    text-align: left;*/
+
+}
+
+header nav ul #config:hover{
+   background: black;
+}
+
+header nav ul #config ul{
+    display: none;
+    background-color: darkslategray;
+    text-align: left;
+    width: 300%;
+    position: absolute;
+    right: 0%;
+    
+   
+}
+
+header nav ul #config ul li{
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    width: 100%;
+}
+
+header nav ul #config ul li a{
+    text-align: left;
+    display: block;
+}
+
+header nav ul #config ul li a span{
+    float: right;
+    margin-left: 36px;
+    position: relative;
+   
+     margin right: 0;
+}
+
+
+
+header nav ul #config li a span{
+/*    margin-right: 80px;*/
+    float: right;
+    top: 0px;
+    margin right: 0;
+    margin-left: 0;
+}
+
+header nav ul .logo{
+float: left;
+font-size: 25px;
+padding: 15px;
+position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 1210px){
+    header #nav{
+        display: none;
+    }
+    
+    header #nav1{
+        display: inline;
+    }
+    body{
+        padding-top: 80px;
+    }
+    
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top:0;
+        background: black;
+    }
+    
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: white;
+        overflow: hidden;
+        font-size: 25px;
+        text-decoration: none;
+        font-family: myriad pro;
+    }
+    
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+    
+    header #nav1{
+        
+        width: 80%;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+        height: calc(100% - 80px);
+        top: 80px;
+    }
+    
+    header #nav1 ul{
+        text-align: left;
+    }
+    
+    header #nav1 ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+/*        top:30px;*/
+    }
+    
+    header #nav1 ul li a{
+        display: block;
+    }
+    
+    header #nav1 ul li:hover .children{
+        display: none;
+    }
+    
+    header #nav1 ul li .children{
+        width: 100%;
+        position: relative;
+    }
+    
+    header #nav1 ul li .children li a{
+        margin-left: 20px;
+    }
+    
+    header #nav1 ul li .caret{
+        float: right;
+    }
+    
+    
+    header #nav1 ul .logo{
+        display: block;
+        top: 10px;
+        float: inherit;
+        font-size: 25px;
+/*        padding: 160px;*/
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        
+}
+    
+    header #nav1 ul #config{
+    float: left;
+
+}
+     header #nav1 ul #config ul  {
+    
+        left: 0%; 
+    }
+    
+    
+    header #nav1 ul #config ul li {
+        
+    }
+    
+    
+}
+
